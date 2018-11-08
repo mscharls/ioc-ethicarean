@@ -36,6 +36,9 @@ img {
 [class*=grid-], [class*=grid_], [class~=grid] {
   margin: 0;
 }
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
 
 /* ------------------------- SHOW BOXES ------------------------- */
 /* section, div {
@@ -52,6 +55,8 @@ img {
 .textcentered     { text-align: center; }
 .textright        { text-align: right; }
 
+.textbottom { align-self: flex-end }
+
 .no-padding { padding: 0; }
 
 .padded-1 { padding: 1%; }
@@ -59,6 +64,8 @@ img {
 .padded-5 { padding: 5%; }
 
 .padded-top-1 { padding-top: 1%;}
+
+.margin-right-2 {margin-right: 2%}
 
 .mob-show { display: none;}
 
@@ -112,4 +119,8 @@ nav a {
 
 header, footer {
   background-color: #2C4F4C;
+}
+
+.icon {
+  max-height: 5em;
 }
