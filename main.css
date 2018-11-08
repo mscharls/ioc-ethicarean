@@ -48,29 +48,27 @@ img {
 
 /* ------------------------- HELPER CLASSES ------------------------- */
 
-.tall         { min-height:100vh; }
-.med-height   { min-height: 50vh; }
+.tall         { min-height:100vh; }  /*not used yet*/
+.med-height   { min-height: 50vh; }  /*not used yet*/
 
-.textleft         { text-align: left; }
-.textcentered     { text-align: center; }
-.textright        { text-align: right; }
+.textcentered     { text-align: center; } /*used*/
+.textright        { text-align: right; }  /*used*/
 
-.textbottom { align-self: flex-end }
+.textbottom { align-self: flex-end } /*not used yet*/
 
-.no-padding { padding: 0; }
+.no-padding { padding: 0; } /*not used yet*/
 
-.padded-1 { padding: 1%; }
-.padded-3 { padding: 3%; }
-.padded-5 { padding: 5%; }
+.padded-1 { padding: 1%; }  /*used*/
+.padded-3 { padding: 3%; }  /*not used yet*/
+.padded-5 { padding: 5%; }  /*not used yet*/
 
-.padded-top-1 { padding-top: 1%;}
+.padded-top-1 { padding-top: 1%;}  /*not used yet*/
 
-.margin-right-2 {margin-right: 2%}
+.hidden   { display: none;}  /*not used yet*/
+.mob-show { display: none;}  /*not used yet*/
 
-.mob-show { display: none;}
-
-.bg-light {background-color: #FFFFFF}
-.bg-med   {background-color: #CDD8D3}
+.bg-light {background-color: #FFFFFF} /*used*/
+.bg-med   {background-color: #CDD8D3} /*used*/
 
 /* ------------------------- UNIVERSAL STYLES ------------------------- */
 
@@ -101,6 +99,7 @@ h1 {
   font-weight: 500;
   font-size: 10vw;
   line-height: 0.9em;
+  min-height: 100vh;
 }
 h2 {
   font-size: 2em;
@@ -113,6 +112,7 @@ nav a {
   font-size: 2em;
   text-decoration: none;
   color: #FFFFFF;
+  margin-right: 2%;
 }
 
 /* ------------------------- HEADER AND FOOTER ------------------------- */
@@ -123,4 +123,10 @@ header, footer {
 
 .icon {
   max-height: 5em;
+}
+
+.col-12 {
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
