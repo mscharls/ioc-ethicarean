@@ -1,17 +1,92 @@
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Montserrat Alternates', sans-serif;
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+  - SPECIFIC PAGES
+    - Page Name
+---------------------------
+Website Fonts:
+  Font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+Website Colours: List colour hex codes here for reference
+  DarkGreen: #2C4F4C
+  LightGreyGreen: #CDD8D3
+  White: #FFFFFF
+  Black: #021325
+----------------------------
 */
 
+
+
+/* ------------------------- CSS RESET ------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid rgb(200,200,200); */
 }
 
-section,
- div{
+img {
+  max-width: 100%;
+}
+
+/* ------------------------- SHOW BOXES ------------------------- */
+section, div {
   padding: 1%;
   border: 1px solid rgb(200,200,200);
+}
+
+/* ------------------------- HELPER CLASSES ------------------------- */
+
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+
+.textleft         { text-align: left; }
+.textcentered     { text-align: center; }
+.textright        { text-align: right; }
+
+.no-padding { padding: 0; }
+
+.padded-1 { padding: 1%; }
+.padded-3 { padding: 3%; }
+.padded-5 { padding: 5%; }
+
+.padded-top-1 { padding-top: 1%;}
+
+.mob-show { display: none;}
+
+
+/* ------------------------- UNIVERSAL STYLES ------------------------- */
+
+.bg-dark {}
+
+.bg-light {}
+
+section {
+  padding: 10vh 5%;
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #021325;
+}
+
+h2, h3, h4 {
+  color: #021325;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 7vw;
+  line-height: 0.9em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
 }
