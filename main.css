@@ -33,12 +33,15 @@ img {
   max-width: 100%;
 }
 
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
 
 /* ------------------------- SHOW BOXES ------------------------- */
-section, div {
+/* section, div {
   padding: 1%;
   border: 1px solid rgb(200,200,200);
-}
+} */
 
 /* ------------------------- HELPER CLASSES ------------------------- */
 
@@ -59,12 +62,11 @@ section, div {
 
 .mob-show { display: none;}
 
+.bg-light {background-color: #FFFFFF}
+.bg-med   {background-color: #CDD8D3}
 
 /* ------------------------- UNIVERSAL STYLES ------------------------- */
 
-.bg-dark {}
-
-.bg-light {}
 
 section {
   padding: 10vh 5%;
@@ -98,4 +100,16 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
+}
+
+nav a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* ------------------------- HEADER AND FOOTER ------------------------- */
+
+header, footer {
+  background-color: #2C4F4C;
 }
