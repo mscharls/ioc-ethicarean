@@ -59,7 +59,7 @@ section, div {
 .no-padding { padding: 0; } /*not used yet*/
 
 .padded-1 { padding: 1%; }  /*used*/
-.padded-3 { padding: 3%; }  /*not used yet*/
+.padded-2 { padding: 2%; }  /*not used yet*/
 .padded-5 { padding: 5%; }  /*not used yet*/
 .padded-sides-2 {padding: 0% 2% 0% 2%} /*used*/
 .padded-bottom-15  { padding-bottom: 15%} /*used*/
@@ -118,6 +118,8 @@ h1 {
 }
 h2 {
   font-size: 5vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 h3 {
   font-size: 2.5vw;
@@ -142,10 +144,10 @@ header {
 }
 
 .icon-top {
-  width: 2.5rem;
+  width: 5vw;
   position: fixed;
   right: 1rem;
-  top: .5rem;
+  top: .25rem;
 }
 
 /* ------------------------- MODULAR ELEMENTS ------------------------- */
@@ -154,7 +156,8 @@ div.map {
   width: 100%;
   position: absolute;
   padding: 15% 10% 2% 10%;
-  top: 15vw;
+  top: 11vw;
+  z-index:-1;
 }
 
 section.map {
@@ -165,5 +168,6 @@ section.map {
 .circle {
   border-radius: 50%;
   height: 25vw;
+
 
 }
