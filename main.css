@@ -84,7 +84,7 @@ section, div {
 
 .bg-light {background-color: #FFFFFF} /*used*/
 .bg-med   {background-color: #CDD8D3} /*used*/
-.bg-light-transparent {background-color: rgba(255,255,255,0.7)}
+.bg-light-transparent {background-color: rgba(255,255,255,0.5)}
 
 /* ------------------------- UNIVERSAL STYLES ------------------------- */
 
@@ -168,6 +168,4 @@ section.map {
 .circle {
   border-radius: 50%;
   height: 25vw;
-
-
 }
