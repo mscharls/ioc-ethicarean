@@ -67,7 +67,7 @@ section, div {
 .corners {border-radius: 4px} /*used*/
 
 
-.padded-top-1 { padding-top: 1%;}  /*not used yet*/
+.padded-top-big { padding-top: 40vh;}  /*used*/
 .padded-top-2 { padding-top: 2%;}  /*used*/
 
 .margin-top-3 { margin-top: 3%} /*not used yet*/
