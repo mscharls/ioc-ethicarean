@@ -74,6 +74,8 @@ section, div {
 .margin-top-5 { margin-top: 5%} /*not used yet*/
 
 .margin-10 { margin: 10%} /*used*/
+.big-margin-left {margin: 10% 0% 30% 20%}
+.big-margin-right {margin: 10% 20% 30% 0%}
 
 .remove   { display: none;}  /*not used yet*/
 .hide     {visibility: hidden}
@@ -143,10 +145,5 @@ header {
   right: 1rem;
   top: .5rem;
 }
-
-.icon-top:hover {
-
-}
-
 
 /* ------------------------- MODULAR ELEMENTS ------------------------- */
