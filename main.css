@@ -74,8 +74,9 @@ section, div {
 .margin-top-5 { margin-top: 5%} /*not used yet*/
 
 .margin-10 { margin: 10%} /*used*/
-.big-margin-left {margin: 10% 0% 30% 20%}
-.big-margin-right {margin: 10% 20% 30% 0%}
+.big-margin-top-bottom {margin: 20% 0% 20% 0%} /*used*/
+.big-margin-left {margin: 10% 0% 30% 20%} /*used*/
+.big-margin-right {margin: 10% 20% 30% 0%} /*used*/
 
 .remove   { display: none;}  /*not used yet*/
 .hide     {visibility: hidden}
