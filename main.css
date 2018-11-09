@@ -62,8 +62,9 @@ section, div {
 .padded-3 { padding: 3%; }  /*not used yet*/
 .padded-5 { padding: 5%; }  /*not used yet*/
 .padded-sides-2 {padding: 0% 2% 0% 2%} /*used*/
+.padded-bottom-15  { padding-bottom: 15%} /*used*/
 
-.corners {border-radius: 4px}
+.corners {border-radius: 4px} /*used*/
 
 
 .padded-top-1 { padding-top: 1%;}  /*not used yet*/
