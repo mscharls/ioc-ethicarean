@@ -99,8 +99,6 @@ img {
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-weight 500;
-  font-style: italic;
   color: #021325;
   background-image: URL("assets/lawrence-kayku-974651.jpg");
   background-attachment: fixed;
@@ -121,11 +119,13 @@ h1 {
   font-weight: 500;
   font-size: 12vw;
   line-height: 0.9em;
+  font-style: italic;
 }
 h2 {
   font-size: 5vw;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  font-style: italic;
 }
 h3 {
   font-size: 2.5vw;
