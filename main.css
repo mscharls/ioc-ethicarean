@@ -99,6 +99,8 @@ img {
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;
+  font-weight 500;
+  font-style: italic;
   color: #021325;
   background-image: URL("assets/lawrence-kayku-974651.jpg");
   background-attachment: fixed;
