@@ -60,11 +60,12 @@ section, div {
 
 .padded-1 { padding: 1%; }  /*used*/
 .padded-2 { padding: 2%; }  /*not used yet*/
-.padded-5 { padding: 5%; }  /*not used yet*/
+.padded-5 { padding: 5%; }  /*used*/
+.padded-7 { padding: 7%; }  /*used*/
 .padded-sides-2 {padding: 0% 2% 0% 2%} /*used*/
 .padded-bottom-15  { padding-bottom: 15%} /*used*/
 
-.corners {border-radius: 4px} /*used*/
+.corners {border-radius: .3vw} /*used*/
 
 
 .padded-top-big { padding-top: 40vh;}  /*used*/
@@ -72,7 +73,7 @@ section, div {
 
 .margin-top-3 { margin-top: 3%} /*not used yet*/
 .margin-top-4 { margin-top: 4%} /*not used yet*/
-.margin-top-5 { margin-top: 5%} /*not used yet*/
+.margin-top-5 { margin-top: 5%} /*used*/
 
 .margin-10 { margin: 10%} /*used*/
 .big-margin-left {margin-left: 10%} /*used*/
@@ -132,6 +133,7 @@ nav a {
   margin-right: 2%;
 }
 
+
 /* ------------------------- HEADER AND FOOTER ------------------------- */
 
 header, footer {
@@ -148,6 +150,8 @@ header {
   position: fixed;
   right: 1rem;
   top: .25rem;
+  z-index: 9;
+  opacity: .5;
 }
 
 /* ------------------------- MODULAR ELEMENTS ------------------------- */
@@ -157,15 +161,57 @@ div.map {
   position: absolute;
   padding: 15% 10% 2% 10%;
   top: 11vw;
-  z-index:-1;
 }
 
 section.map {
   position: relative;
 }
 
-
 .circle {
   border-radius: 50%;
   height: 25vw;
+}
+
+.middle {
+  z-index: 8;
+  position: relative;
+}
+
+/* ------------------------- FORM ELEMENTS ------------------------- */
+
+
+input.button, .button  {
+  font-size: 2.5vw;
+  text-align: center;
+  background-color: #CDD8D3;
+  border: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: .7vw;
+  border-radius: .3vw;
+  margin: 0vw .7vw 0vw .7vw;
+  transition: color 1s, background-color 1s;
+}
+
+input {
+  font-size: 2.5vw;
+  border: solid 1px #CDD8D3;
+  padding: .7vw;
+  border-radius: .3vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+input::placeholder {
+  color: #CDD8D3;
+  transition: 1s;
+  font-family: 'Raleway', sans-serif;
+}
+
+input:hover::-webkit-input-placeholder
+{
+  color: #FFFFFF;
+}
+
+.button:hover {
+  background-color: #2C4F4C;
+  color: #FFFFFF;
 }
