@@ -217,8 +217,9 @@ input:hover::-webkit-input-placeholder
 .button:hover {
   background-color: #2C4F4C;
   color: #FFFFFF;
+  cursor: default;
 }
 
 .circle h1 {
-  color: black;
+  color: #021325;
 }
