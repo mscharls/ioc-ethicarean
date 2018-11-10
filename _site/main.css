@@ -1,0 +1,227 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+  - SPECIFIC PAGES
+    - Page Name
+---------------------------
+Website Fonts:
+  Font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+Website Colours: List colour hex codes here for reference
+  DarkGreen: #2C4F4C
+  LightGreyGreen: #CDD8D3
+  White: #FFFFFF
+  Black: #021325
+----------------------------
+*/
+
+
+
+/* ------------------------- CSS RESET ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
+
+/* ------------------------- SHOW BOXES ------------------------- */
+/* section, div {
+  padding: 1%;
+  border: 1px solid rgb(200,200,200);
+} */
+
+/* ------------------------- HELPER CLASSES ------------------------- */
+
+.tall         { min-height:100vh; }  /*used*/
+.med-height   { min-height: 50vh; }  /*used*/
+
+.textcentered     { text-align: center; } /*used*/
+.textright        { text-align: right; }  /*used*/
+
+.textbottom { align-self: flex-end } /*used*/
+
+/* .no-padding { padding: 0; } /*not used yet*/
+
+.padded-1 { padding: 1%; }  /*used*/
+.padded-2 { padding: 2%; }  /*used*/
+.padded-5 { padding: 5%; }  /*used*/
+.padded-7 { padding: 7%; }  /*used*/
+.padded-sides-2 {padding: 0% 2% 0% 2%} /*used*/
+.padded-bottom-15  { padding-bottom: 15%} /*used*/
+
+.corners {border-radius: .3vw} /*used*/
+
+
+.padded-top-big { padding-top: 40vh;}  /*used*/
+.padded-top-2 { padding-top: 2%;}  /*used*/
+.padded-top-5 { padding-top: 5%;}  /*used*/
+.padded-top-20 {padding-top: 20%} /*used*/
+
+.margin-top-3 { margin-top: 3%} /*used*/
+/* .margin-top-4 { margin-top: 4%} /*not used yet*/
+.margin-top-5 { margin-top: 5%} /*used*/
+.margin-auto {margin: auto} /*used*/
+
+.margin-10 { margin: 10%} /*used*/
+.big-margin-left {margin-left: 10%} /*used*/
+.big-margin-right {margin-right: 10%} /*used*/
+
+.remove   { display: none;}  /*used*/
+.hide     {visibility: hidden} /*used*/
+/* .mob-show { display: none;}  /*not used yet*/
+
+.bg-light {background-color: #FFFFFF} /*used*/
+.bg-med   {background-color: #CDD8D3} /*used*/
+.bg-light-transparent {background-color: rgba(255,255,255,0.5)} /*used*/
+
+/* ------------------------- UNIVERSAL STYLES ------------------------- */
+
+
+/* section {
+  padding: 5%;
+} */
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #021325;
+  background-image: URL("assets/lawrence-kayku-974651.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2, h3, h4 {
+  color: #021325;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 12vw;
+  line-height: 0.9em;
+  font-style: italic;
+}
+h2 {
+  font-size: 5vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+h3 {
+  font-size: 2.5vw;
+}
+
+nav a {
+  font-size: 2.5vw;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-right: 2%;
+}
+
+
+/* ------------------------- HEADER AND FOOTER ------------------------- */
+
+header, footer {
+  background-color: #2C4F4C;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.icon-top {
+  width: 5vw;
+  position: fixed;
+  right: 1rem;
+  top: .25rem;
+  z-index: 9;
+  opacity: .5;
+}
+
+/* ------------------------- MODULAR ELEMENTS ------------------------- */
+
+div.map {
+  width: 100%;
+  position: absolute;
+  padding: 15% 10% 2% 10%;
+  top: 11vw;
+}
+
+section.map {
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 25vw;
+}
+
+.middle {
+  z-index: 8;
+  position: relative;
+}
+
+/* ------------------------- FORM ELEMENTS ------------------------- */
+
+
+input.button, .button  {
+  font-size: 2.5vw;
+  text-align: center;
+  background-color: #CDD8D3;
+  border: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: .7vw;
+  border-radius: .3vw;
+  margin: 0vw .7vw 0vw .7vw;
+  transition: color 1s, background-color 1s;
+}
+
+input {
+  font-size: 2.5vw;
+  border: solid 1px #CDD8D3;
+  padding: .7vw;
+  border-radius: .3vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+input::placeholder {
+  color: #CDD8D3;
+  transition: 1s;
+  font-family: 'Raleway', sans-serif;
+}
+
+input:hover::-webkit-input-placeholder
+{
+  color: #FFFFFF;
+}
+
+.button:hover {
+  background-color: #2C4F4C;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.circle h1 {
+  color: #021325;
+}
