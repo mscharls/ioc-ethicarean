@@ -1,7 +1,14 @@
 ---
-layout:default
+layout: default
+counter:
+  - number: 1
+    lable: lable 1
+  - number: 2
+    lable: lable 2
+  - number: 3
+    lable: lable 3
 ---
-<!--comment-->
+
   <!-- - - - - - - - This is the start of my BODY- - - - - - - - - -->
   <body>
     <!-- - - - - - - - This is the start of my HEADER- - - - - - - - - -->
@@ -82,38 +89,20 @@ layout:default
         </div>
 
         <section class="grid-spaceAround textcentered">
-          <div class="col-3">
-            <div class="bg-light circle grid padded-top-20">
-              <div class="margin-auto">
-                <h1 class="middle">13</h1>
-              </div>
-              <div class="col-12-bottom padded-bottom-15">
-                <h3 class="middle padded-top-5"> lable </h3>
-              </div>
-            </div>
-          </div>
 
+        {% for counter in page.counter %}
           <div class="col-3">
             <div class="bg-light circle grid padded-top-20">
               <div class="margin-auto">
-                <h1 class="middle">13</h1>
+                <h1 class="middle">{{counter.number}}</h1>
               </div>
               <div class="col-12-bottom padded-bottom-15">
-                <h3 class="middle padded-top-5"> lable </h3>
+                <h3 class="middle padded-top-5"> {{counter.lable}} </h3>
               </div>
             </div>
           </div>
+        {% endfor %}
 
-          <div class="col-3">
-            <div class="bg-light circle grid padded-top-20">
-              <div class="margin-auto">
-                <h1 class="middle">13</h1>
-              </div>
-              <div class="col-12-bottom padded-bottom-15">
-                <h3 class="middle padded-top-5"> lable </h3>
-              </div>
-            </div>
-          </div>
         </section>
       </section>
 
