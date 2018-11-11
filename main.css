@@ -41,10 +41,10 @@ img {
 }
 
 /* ------------------------- SHOW BOXES ------------------------- */
-/* section, div {
-  padding: 1%;
-  border: 1px solid rgb(200,200,200);
-} */
+section, div, span {
+  /* padding: 1%; */
+  /* border: 1px solid rgb(200,200,200); */
+}
 
 /* ------------------------- HELPER CLASSES ------------------------- */
 
@@ -90,12 +90,18 @@ img {
 .bg-med   {background-color: #CDD8D3} /*used*/
 .bg-light-transparent {background-color: rgba(255,255,255,0.5)} /*used*/
 
+/* .anchor {
+  position: absolute;
+  top:-30vh;
+} */
+
 /* ------------------------- UNIVERSAL STYLES ------------------------- */
 
 
 /* section {
   padding: 5%;
 } */
+
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;
