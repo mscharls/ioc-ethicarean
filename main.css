@@ -106,7 +106,7 @@ section, div, span {
 body {
   font-family: 'Montserrat Alternates', sans-serif;
   color: #021325;
-  background-image: URL("assets/lawrence-kayku-974651.jpg");
+  /* background-image: URL("assets/lawrence-kayku-974651.jpg"); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -3,20 +3,12 @@
 <html>
   <head>
 
-    <!-- this is the head of my HTML where we include all the links to the css files, google fonts, SEO and meta data-->
+    <title> {{page.title}} </title>
 
-    <!-- a ttle is what shws on the browser tab when someone is on your website-->
+    <link rel="icon" href="{{page.favicon}}">
 
-    <title> ethicarean </title>
-
-
-    <!--  - - - - - - - These are my meta tags - - - - - - -  -->
     <!-- tells browser that this website will be responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--  - - - - - - - These is my favicon file - - - - - - -  -->
-    <link rel="icon" href="assets/favicon.ico">
-
     <!-- - - - - - - - These are my css files - - - - - - - -->
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Raleway:500i" rel="stylesheet">
@@ -27,15 +19,18 @@
 
   </head>
 
-  {{ content }}
 
-  <footer class="hide">
-        <nav class="textbottom padded-1">
-          <a href="#"> what </a>
-          <a href="#"> why </a>
-          <a href="#"> where </a>
-          <a href="#"> sign up </a>
-        </nav>
-  </footer>
+  <body>
 
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include jquery.html %}
+
+    {% include icon.html %}
+
+  </body>
 </html>
