@@ -65,8 +65,7 @@ section, div, span {
 .padded-sides-2 {padding: 0% 2% 0% 2%} /*used*/
 .padded-bottom-15  { padding-bottom: 15%} /*used*/
 
-.corners {border-radius: .3vw} /*used*/
-
+.corners {border-radius: .3vw;} /*used*/
 
 .padded-top-big { padding-top: 40vh;}  /*used*/
 .padded-top-2 { padding-top: 2%;}  /*used*/
@@ -103,7 +102,7 @@ section, div, span {
 } */
 
 
-body {
+body, .home {
   font-family: 'Montserrat Alternates', sans-serif;
   color: #021325;
   background-attachment: fixed;
@@ -159,9 +158,9 @@ header {
   width: 5vw;
   position: fixed;
   right: 1rem;
-  top: .25rem;
+  top: 1rem;
   z-index: 9;
-  opacity: .5;
+  opacity: .75;
 }
 
 /* ------------------------- MODULAR ELEMENTS ------------------------- */
@@ -229,4 +228,12 @@ input:hover::-webkit-input-placeholder
 
 .circle h1 {
   color: #021325;
+}
+
+.home-icon {
+  max-height: 25vh;
+  min-height: 25vh;
+  opacity: .85;
+  margin-bottom: 30vh;
+  margin-top: 30vh;
 }

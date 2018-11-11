@@ -1,27 +1,30 @@
 ---
-layout: default
+layout: landing
 css: main.css
 favicon: assets/e-favicon.ico
 title: ethicarean
-background-pic: assets/lawrence-kayku-974651.jpg
 icon:
+  - link: /liquid.html
+    image: assets/drop-white.svg
+    background-pic: assets/joakim-honkasalo-666831.jpg
   - link: /fresh.html
-    image: assets/drop.svg
-  - link: /fresh.html
-    image: assets/leaf.svg
-  - link: /fresh.html
-    image: assets/jar.svg
+    image: assets/leaf-white.svg
+    background-pic: assets/lawrence-kayku-974651.jpg
+  - link: /contain.html
+    image: assets/jar-white.svg
+    background-pic: assets/joanna-kosinska-342000.jpg
 ---
 
 
-
-    <section class="grid-spaceAround">
+    <section class="grid-center">
 
       {% for icon in page.icon %}
-        <div class="col-1-bottom">
-          <a href="{{icon.link}}">
-            <img src="{{icon.image}}">
-          </a>
+        <div class="col-4 tall home" style="background-image: url({{icon.background-pic}});">
+          <div class="margin-10">
+            <a href="{{icon.link}}">
+              <img src="{{icon.image}}" class="home-icon">
+            </a>
+          </div>
         </div>
       {% endfor %}
 
