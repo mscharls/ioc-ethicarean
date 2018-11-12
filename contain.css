@@ -29,7 +29,7 @@ input {
 
 input::placeholder {
   color: #BA9395;
-  transition: 1s;
+  transition: color 1s;
   font-family: 'Raleway', sans-serif;
 }
 

@@ -97,12 +97,11 @@ $('a[href*="#"]')
   })
 
 
-  // START OF ICON HOVER ACTIONS //
+  // START OF HEADER HOVER ACTIONS //
 
   $("body").mousemove(function(event){
     console.log(event.pageY)
     if(event.pageY < 55){
-      console.log("icon hover function"); //debug comments
       $("#header").removeClass("hide");
       $("#header").removeClass("fadeOutUp");
       $("#header").addClass("fadeInDown");
@@ -112,15 +111,30 @@ $('a[href*="#"]')
       $("#header").removeClass("fadeInDown");
       $("#header").addClass("fadeOutUp");
 
+    }
+  })
+
+  // END OF HEADER HOVER ACTIONS //
+
+
+  // START OF FOOTER HOVER ACTIONS //
+
+  $("body").mousemove(function(event){
+    console.log(event.pageY)
+    if(event.pageY > 4200){
+      $("#footer").removeClass("hide");
+      $("#footer").removeClass("fadeOutDown");
+      $("#footer").addClass("fadeInUp");
+
+    }
+    else {
+      $("#footer").removeClass("fadeInUp");
+      $("#footer").addClass("fadeOutDown");
 
     }
   })
 
-
-
-
-  // END OF ICON HOVER ACTIONS //
-
+  // END OF FOOTER HOVER ACTIONS //
 
 
 

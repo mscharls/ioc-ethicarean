@@ -27,6 +27,7 @@ Website Colours: List colour hex codes here for reference
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 img {
@@ -38,6 +39,10 @@ img {
 }
 [class*=col-], [class*=col_], [class~=col] {
   padding: 0;
+}
+
+a:-webkit-any-link {
+  color: black;
 }
 
 /* ------------------------- SHOW BOXES ------------------------- */
@@ -105,7 +110,7 @@ section, div, span {
 
 body, .home {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #021325;
+  color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,7 +118,7 @@ body, .home {
 }
 
 h2, h3, h4 {
-  color: #021325;
+  color: black;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
@@ -147,9 +152,17 @@ nav a {
 /* ------------------------- HEADER AND FOOTER ------------------------- */
 
 
-header {
+header, footer {
   position: fixed;
   width: 100%;
+}
+
+#header a, #footer a {
+  color: #FFFFFF;
+}
+
+#footer {
+  bottom:0;
 }
 
 .icon-top {
@@ -187,7 +200,7 @@ section.map {
 }
 
 .circle h1 {
-  color: #021325;
+  color: black;
 }
 
 .home-icon {
