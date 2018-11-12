@@ -124,8 +124,6 @@ $('a[href*="#"]')
   })
 
   // END OF HEADER HOVER ACTIONS //
-
-
   // START OF FOOTER HOVER ACTIONS //
 
   $("body").mousemove(function(event){
@@ -144,8 +142,46 @@ $('a[href*="#"]')
   })
 
   // END OF FOOTER HOVER ACTIONS //
+  // START OF H1 HOVER ACTIONS //
+
+  $(".ethic").mouseenter(function(event){
+    $("#philo1").removeClass("fadeOut")
+    $("#philo1").css("visibility","visible");
+    $("#philo1").addClass("fadeIn")
+  })
+
+  $(".ethic").mouseleave(function(event){
+    $("#philo1").removeClass("fadeIn")
+    $("#philo1").addClass("fadeOut")
+  })
 
 
+
+  $(".care").mouseenter(function(event){
+    $("#philo2").removeClass("fadeOut")
+    $("#philo2").css("visibility","visible");
+    $("#philo2").addClass("fadeIn")
+  })
+
+  $(".care").mouseleave(function(event){
+    $("#philo2").removeClass("fadeIn")
+    $("#philo2").addClass("fadeOut")
+  })
+
+
+
+  $(".ethicarean").mouseenter(function(event){
+    $("#philo3").removeClass("fadeOut")
+    $("#philo3").css("visibility","visible");
+    $("#philo3").addClass("fadeIn")
+  })
+
+  $(".ethicarean").mouseleave(function(event){
+    $("#philo3").removeClass("fadeIn")
+    $("#philo3").addClass("fadeOut")
+  })
+
+  // END OF H1 HOVER ACTIONS //
 
 
 
