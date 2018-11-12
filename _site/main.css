@@ -54,7 +54,7 @@ section, div, span {
 /* ------------------------- HELPER CLASSES ------------------------- */
 
 .tall         { min-height:100vh; }  /*used*/
-.med-height   { min-height: 50vh; }  /*used*/
+.med-height   { height: 50vh; }  /*used*/
 
 .textcentered     { text-align: center; } /*used*/
 .textright        { text-align: right; }  /*used*/
@@ -90,8 +90,8 @@ section, div, span {
 
 .remove   { display: none;}  /*used*/
 .hide     {visibility: hidden} /*used*/
-.offpage  {top:-100px}
 /* .mob-show { display: none;}  /*not used yet*/
+
 
 .bg-light {background-color: #FFFFFF} /*used*/
 .bg-med   {background-color: #CDD8D3} /*used*/
@@ -121,7 +121,7 @@ body, .home {
 }
 
 h1, h2, h3, h4, p {
-  cursor: default; 
+  cursor: default;
 }
 
 h2, h3, h4 {
@@ -155,6 +155,9 @@ nav a {
   margin-right: 2%;
 }
 
+p {
+  font-size: 1.5vw;
+}
 
 /* ------------------------- HEADER AND FOOTER AND ICONS ------------------------- */
 
@@ -189,13 +192,16 @@ header, footer {
   visibility: hidden;
 }
 
-.down-arrow {
-  width: 2vw;
+.arrow {
+  width: 100vw;
   position: fixed;
-  bottom: 2vw;
-  left: 50vw;
-  opacity: .5;
+  bottom: 1vw;
+  opacity: .6;
+  z-index: 8;
+}
 
+.arrow img {
+    max-height: 5vh;
 }
 
 /* ------------------------- MODULAR & SPECIFIC ELEMENTS ------------------------- */
@@ -253,6 +259,7 @@ section.map {
   top:505vh;
 }
 
-.home {
-  transition: all 1s ease-in;
+#map {
+  position: absolute;
+  top:300vh;
 }

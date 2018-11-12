@@ -24,11 +24,13 @@ icon:
       {% for icon in page.icon %}
         <div class="col-4 tall home" id="{{icon.id}}-column" style="background-image: url({{icon.background-pic}});">
           <div class="margin-10">
-            <a href="{{icon.link}}" id="{{icon.id}}">
-              <img src="{{icon.image}}" class="home-icon">
-            </a>
+            <div>
+              <a href="{{icon.link}}" id="{{icon.id}}">
+                <img src="{{icon.image}}" class="home-icon">
+              </a>
+            </div>
           </div>
         </div>
       {% endfor %}
-
+      
     </section>

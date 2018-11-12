@@ -3,6 +3,7 @@
 
 $(document).ready (function(){
 
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -48,33 +49,13 @@ $('a[href*="#"]')
     event.preventDefault();
     console.log("leaf click function"); //debug comments
 
-    $("#leaf-column").removeClass("col-4");
-    $("#leaf-column").addClass("col-12");
-
-    $("#drop-column").addClass("remove");
-    $("#jar-column").addClass("remove");
+    $("body").addClass("animated")
+    $("body").addClass("fadeOut")
+    $("body").addClass("slow")
 
     setTimeout(function(){
       window.location.href="/fresh.html";
     },1000);
-
-
-  })
-
-  $("#jar").click(function(event){
-    event.preventDefault();
-    console.log("leaf click function"); //debug comments
-
-    $("#jar-column").removeClass("col-4");
-    $("#jar-column").addClass("col-12");
-
-    $("#drop-column").addClass("remove");
-    $("#leaf-column").addClass("remove");
-
-    setTimeout(function(){
-      window.location.href="/contain.html";
-    },1000);
-
 
   })
 
@@ -82,18 +63,30 @@ $('a[href*="#"]')
     event.preventDefault();
     console.log("leaf click function"); //debug comments
 
-    $("#drop-column").removeClass("col-4");
-    $("#drop-column").addClass("col-12");
-
-    $("#jar-column").addClass("remove");
-    $("#leaf-column").addClass("remove");
+    $("body").addClass("animated")
+    $("body").addClass("fadeOut")
+    $("body").addClass("slow")
 
     setTimeout(function(){
       window.location.href="/liquid.html";
     },1000);
 
+  })
+
+  $("#jar").click(function(event){
+    event.preventDefault();
+    console.log("leaf click function"); //debug comments
+
+    $("body").addClass("animated")
+    $("body").addClass("fadeOut")
+    $("body").addClass("slow")
+
+    setTimeout(function(){
+      window.location.href="/contain.html";
+    },1000);
 
   })
+
 
   // END OF HOME PAGE ACTIONS //
   // START OF HEADER HOVER ACTIONS //
@@ -182,7 +175,7 @@ $('a[href*="#"]')
   })
 
   // END OF H1 HOVER ACTIONS //
-  // START OF DOWN ARROW ACTIONS //
+  // START OF COUNTER ACTIONS //
 
 
 
