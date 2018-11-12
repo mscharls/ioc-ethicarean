@@ -188,7 +188,7 @@ header, footer {
   max-height: 6vw
 }
 
-#icon-hide1, #icon-hide2 {
+#icon-hide1, #icon-hide2, #up-arrow {
   visibility: hidden;
 }
 
@@ -201,7 +201,7 @@ header, footer {
 }
 
 .arrow img {
-    max-height: 5vh;
+    max-height: 2vw;
 }
 
 /* ------------------------- MODULAR & SPECIFIC ELEMENTS ------------------------- */

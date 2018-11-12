@@ -121,7 +121,7 @@ $('a[href*="#"]')
 
   $("body").mousemove(function(event){
     console.log(event.pageY)
-    if(event.pageY > 4200){
+    if(event.pageY > 4270){
       $("#footer").removeClass("hide");
       $("#footer").removeClass("fadeOutDown");
       $("#footer").addClass("fadeInUp");
@@ -175,7 +175,33 @@ $('a[href*="#"]')
   })
 
   // END OF H1 HOVER ACTIONS //
-  // START OF COUNTER ACTIONS //
+  // START OF ARROW ACTIONS ACTIONS //
+
+  $("body").mousemove(function(event){
+    console.log(event.pageY)
+    if(event.pageY > 390){
+      $("#up-arrow").css("visibility","visible");
+
+    }
+    else {
+      $("#up-arrow").css("visibility","hidden");
+
+    }
+  })
+
+  $("body").mousemove(function(event){
+    console.log(event.pageY)
+    if(event.pageY < 3703){
+      $("#down-arrow").css("visibility","visible");
+
+    }
+    else {
+      $("#down-arrow").css("visibility","hidden");
+
+    }
+  })
+
+
 
 
 
