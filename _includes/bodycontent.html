@@ -74,8 +74,8 @@
 {% for counter in page.counter %}
   <div class="col-3">
     <div class="bg-light circle grid padded-top-20">
-      <div class="margin-auto">
-        <h1 class="middle">{{counter.number}}</h1>
+      <div id="counter" class="margin-auto">
+        <h1 class="middle counter-value" data-count={{counter.number}}>0</h1>
       </div>
       <div class="col-12-bottom padded-bottom-15">
         <h3 class="middle padded-top-5"> {{counter.lable}} </h3>
