@@ -117,7 +117,11 @@ body, .home {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: default;
+
+}
+
+h1, h2, h3, h4, p {
+  cursor: default; 
 }
 
 h2, h3, h4 {
@@ -241,12 +245,12 @@ section.map {
 
 #where {
   position: absolute;
-  top:370vh;
+  top:265vh;
 }
 
 #signup {
   position: absolute;
-  top:510vh;
+  top:505vh;
 }
 
 .home {
