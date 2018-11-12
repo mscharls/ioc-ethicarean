@@ -17,3 +17,42 @@ header {
   z-index: 9;
   opacity: .5;
 }
+
+/* ------------------------- FORM ELEMENTS ------------------------- */
+
+input.button, .button  {
+  font-size: 2.5vw;
+  text-align: center;
+  background-color: #9FB0BA;
+  border: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: .7vw;
+  border-radius: .3vw;
+  margin: 0vw .7vw 0vw .7vw;
+  transition: color 1s, background-color 1s;
+}
+
+input {
+  font-size: 2.5vw;
+  border: solid 1px #9FB0BA;
+  padding: .7vw;
+  border-radius: .3vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+input::placeholder {
+  color: #9FB0BA;
+  transition: 1s;
+  font-family: 'Raleway', sans-serif;
+}
+
+input:hover::-webkit-input-placeholder
+{
+  color: #FFFFFF;
+}
+
+.button:hover {
+  background-color: #2A3A43;
+  color: #FFFFFF;
+  cursor: default;
+}
