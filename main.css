@@ -201,3 +201,7 @@ section.map {
   position: absolute;
   top:510vh;
 }
+
+.home {
+  transition: all 1s ease-in;
+}

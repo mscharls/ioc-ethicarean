@@ -7,21 +7,24 @@ icon:
   - link: /liquid.html
     image: assets/drop-white.svg
     background-pic: assets/joakim-honkasalo-666831.jpg
+    id: drop
   - link: /fresh.html
     image: assets/leaf-white.svg
     background-pic: assets/lawrence-kayku-974651.jpg
+    id: leaf
   - link: /contain.html
     image: assets/jar-white.svg
     background-pic: assets/AdobeStock_223214126.jpeg
+    id: jar
 ---
 
 
     <section class="grid-center">
 
       {% for icon in page.icon %}
-        <div class="col-4 tall home" style="background-image: url({{icon.background-pic}});">
+        <div class="col-4 tall home" id="{{icon.id}}-column" style="background-image: url({{icon.background-pic}});">
           <div class="margin-10">
-            <a href="{{icon.link}}">
+            <a href="{{icon.link}}" id="{{icon.id}}">
               <img src="{{icon.image}}" class="home-icon">
             </a>
           </div>

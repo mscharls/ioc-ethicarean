@@ -1,6 +1,8 @@
 
   // START OF SMOOTH SCROLL //
 
+$(document).ready (function(){
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -40,3 +42,63 @@ $('a[href*="#"]')
 
 
   // END OF SMOOTH SCROLL //
+
+  // START OF HOME PAGE ACTIONS //
+
+  $("#leaf").click(function(event){
+    event.preventDefault();
+    console.log("leaf click function"); //debug comments
+
+    $("#leaf-column").removeClass("col-4");
+    $("#leaf-column").addClass("col-12");
+
+    $("#drop-column").addClass("remove");
+    $("#jar-column").addClass("remove");
+
+    setTimeout(function(){
+      window.location.href="/fresh.html";
+    },1000);
+
+
+  })
+
+  $("#jar").click(function(event){
+    event.preventDefault();
+    console.log("leaf click function"); //debug comments
+
+    $("#jar-column").removeClass("col-4");
+    $("#jar-column").addClass("col-12");
+
+    $("#drop-column").addClass("remove");
+    $("#leaf-column").addClass("remove");
+
+    setTimeout(function(){
+      window.location.href="/contain.html";
+    },1000);
+
+
+  })
+
+  $("#drop").click(function(event){
+    event.preventDefault();
+    console.log("leaf click function"); //debug comments
+
+    $("#drop-column").removeClass("col-4");
+    $("#drop-column").addClass("col-12");
+
+    $("#jar-column").addClass("remove");
+    $("#leaf-column").addClass("remove");
+
+    setTimeout(function(){
+      window.location.href="/liquid.html";
+    },1000);
+
+
+  })
+
+
+
+
+
+  // END OF HOME PAGE ACTIONS //
+})
