@@ -83,6 +83,7 @@ section, div, span {
 
 .remove   { display: none;}  /*used*/
 .hide     {visibility: hidden} /*used*/
+.offpage  {top:-100px}
 /* .mob-show { display: none;}  /*not used yet*/
 
 .bg-light {background-color: #FFFFFF} /*used*/
@@ -143,7 +144,22 @@ nav a {
 }
 
 
+/* ------------------------- HEADER AND FOOTER ------------------------- */
 
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.icon-top {
+  width: 3vw;
+  position: fixed;
+  right: 1rem;
+  top: .75rem;
+  z-index: 9;
+  opacity: .5;
+}
 
 
 

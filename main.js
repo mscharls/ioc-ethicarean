@@ -97,8 +97,34 @@ $('a[href*="#"]')
   })
 
 
+  // START OF ICON HOVER ACTIONS //
+
+  $("body").mousemove(function(event){
+    console.log(event.pageY)
+    if(event.pageY < 55){
+      console.log("icon hover function"); //debug comments
+      $("#header").removeClass("hide");
+      $("#header").removeClass("fadeOutUp");
+      $("#header").addClass("fadeInDown");
+
+    }
+    else {
+      $("#header").removeClass("fadeInDown");
+      $("#header").addClass("fadeOutUp");
+
+
+    }
+  })
+
+
+
+
+  // END OF ICON HOVER ACTIONS //
+
 
 
 
   // END OF HOME PAGE ACTIONS //
+
+
 })
