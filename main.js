@@ -182,7 +182,7 @@ $('a[href*="#"]')
   })
 
   // END OF H1 HOVER ACTIONS //
-
+  // START OF DOWN ARROW ACTIONS //
 
 
 

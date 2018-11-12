@@ -152,7 +152,7 @@ nav a {
 }
 
 
-/* ------------------------- HEADER AND FOOTER ------------------------- */
+/* ------------------------- HEADER AND FOOTER AND ICONS ------------------------- */
 
 
 header, footer {
@@ -185,6 +185,14 @@ header, footer {
   visibility: hidden;
 }
 
+.down-arrow {
+  width: 2vw;
+  position: fixed;
+  bottom: 2vw;
+  left: 50vw;
+  opacity: .5;
+
+}
 
 /* ------------------------- MODULAR & SPECIFIC ELEMENTS ------------------------- */
 
