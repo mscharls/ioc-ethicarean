@@ -42,7 +42,6 @@ $('a[href*="#"]')
 
 
   // END OF SMOOTH SCROLL //
-
   // START OF HOME PAGE ACTIONS //
 
   $("#leaf").click(function(event){
@@ -96,20 +95,30 @@ $('a[href*="#"]')
 
   })
 
-
+  // END OF HOME PAGE ACTIONS //
   // START OF HEADER HOVER ACTIONS //
 
   $("body").mousemove(function(event){
     console.log(event.pageY)
-    if(event.pageY < 55){
+    if(event.clientY < 55){
       $("#header").removeClass("hide");
       $("#header").removeClass("fadeOutUp");
       $("#header").addClass("fadeInDown");
+      $("#icon-hide1").css("visibility","visible");
+      $("#icon-hide1").removeClass("fadeOutUp");
+      $("#icon-hide1").addClass("fadeInDown");
+      $("#icon-hide2").css("visibility","visible");
+      $("#icon-hide2").removeClass("fadeOutUp");
+      $("#icon-hide2").addClass("fadeInDown");
 
     }
     else {
       $("#header").removeClass("fadeInDown");
       $("#header").addClass("fadeOutUp");
+      $("#icon-hide1").removeClass("fadeInDown");
+      $("#icon-hide1").addClass("fadeOutUp");
+      $("#icon-hide2").removeClass("fadeInDown");
+      $("#icon-hide2").addClass("fadeOutUp");
 
     }
   })
@@ -138,7 +147,7 @@ $('a[href*="#"]')
 
 
 
-  // END OF HOME PAGE ACTIONS //
+
 
 
 })

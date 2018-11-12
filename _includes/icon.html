@@ -1,6 +1,14 @@
 
-<section class="grid icon-top">
-  <div class="col-1 icon-top" id="icon-top">
-    <img src="{{page.nav-icon}}">
-  </div>
+
+
+<section class="grid-spaceAround icon-top">
+
+  {% for topcorner in page.topcorner %}
+    <div class="col-3">
+      <a href="{{topcorner.link}}">
+        <img src="{{topcorner.nav-icon}}" id="{{topcorner.nav-id}}" class="animated">
+      </a>  
+    </div>
+  {% endfor %}
+
 </section>

@@ -72,10 +72,12 @@ section, div, span {
 
 .corners {border-radius: .3vw;} /*used*/
 
-.padded-top-big { padding-top: 40vh;}  /*used*/
+
 .padded-top-2 { padding-top: 2%;}  /*used*/
 .padded-top-5 { padding-top: 5%;}  /*used*/
 .padded-top-20 {padding-top: 20%} /*used*/
+.padded-top-30 { padding-top: 30vh;}  /*used*/
+.padded-top-big { padding-top: 40vh;}  /*used*/
 
 .margin-top-3 { margin-top: 3%} /*used*/
 /* .margin-top-4 { margin-top: 4%} /*not used yet*/
@@ -166,14 +168,21 @@ header, footer {
 }
 
 .icon-top {
-  width: 3vw;
+  width: 15vw;
   position: fixed;
-  right: 1rem;
-  top: .75rem;
+  right: 1vw;
+  top: 1vw;
   z-index: 9;
   opacity: .5;
 }
 
+.icon-top img {
+  max-height: 6vw
+}
+
+#icon-hide1, #icon-hide2 {
+  visibility: hidden;
+}
 
 
 /* ------------------------- MODULAR & SPECIFIC ELEMENTS ------------------------- */
