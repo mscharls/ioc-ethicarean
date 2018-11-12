@@ -179,7 +179,7 @@ $('a[href*="#"]')
 
   $("body").mousemove(function(event){
     console.log(event.pageY)
-    if(event.pageY > 390){
+    if(event.pageY > 616){
       $("#up-arrow").css("visibility","visible");
 
     }
