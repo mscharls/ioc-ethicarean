@@ -175,28 +175,7 @@ $('a[href*="#"]')
   // END OF H1 HOVER ACTIONS //
   // START OF ARROW ACTIONS ACTIONS //
 
-  $("body").mousemove(function(event){
-    if(event.pageY > 616){
-      $("#up-arrow").css("visibility","visible");
 
-    }
-    else {
-      $("#up-arrow").css("visibility","hidden");
-
-    }
-  })
-
-  $("body").mousemove(function(event){
-  //  console.log(event.pageY)
-    if(event.pageY < 3703){
-      $("#down-arrow").css("visibility","visible");
-
-    }
-    else {
-      $("#down-arrow").css("visibility","hidden");
-
-    }
-  })
 
 // END OF ARROW ACTIONS ACTIONS //
 // START OF COUNTER SCRIPT //
@@ -237,13 +216,6 @@ $('a[href*="#"]')
 // END OF COUNTER SCRIPT //
 // START OF FORM BUTTON OVERIDES SCRIPT //
 
-  $("#postcodebutton").click(function(event){
-    event.preventDefault();
-  setTimeout(function(){
-    window.location.href="#map";
-  },1);
-
-})
 
 // START OF FORM BUTTON OVERIDES SCRIPT //
 
