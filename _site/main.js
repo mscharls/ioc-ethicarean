@@ -262,7 +262,7 @@ $('a[href*="#"]')
     if($("#arrow-href").attr("href") === "#success"){
       setTimeout(function(){
         $("#arrow-href").removeAttr("href","#success");
-        $("#arrow-href").attr("href","#home");
+        $("#arrow-href").attr("href","#");
         $("#arrow-container").addClass("rotate");
       },10);
     }
