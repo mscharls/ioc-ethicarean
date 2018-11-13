@@ -214,10 +214,64 @@ $('a[href*="#"]')
   });
 
 // END OF COUNTER SCRIPT //
-// START OF FORM BUTTON OVERIDES SCRIPT //
+// START OF DOWN ARROW HREF SCRIPT //
+
+  // $("#down-arrow").click(function(event){
+  //   console.log("arrow click function"); //debug comments
+  //
+  //   setTimeout(function(){
+  //     $("#arrow-href").removeAttr("href","#what");
+  //     console.log("remove href"); //debug comments
+  //     $("#arrow-href").attr("href","#why");
+  //   },10);
+  //
+  // })
 
 
-// START OF FORM BUTTON OVERIDES SCRIPT //
+  $("#down-arrow").click(function(event){
+    if($("#arrow-href").attr("href") === "#what"){
+      setTimeout(function(){
+        $("#arrow-href").removeAttr("href","#what");
+        $("#arrow-href").attr("href","#why");
+      },10);
+    }
+    if($("#arrow-href").attr("href") === "#why"){
+      setTimeout(function(){
+        $("#arrow-href").removeAttr("href","#why");
+        $("#arrow-href").attr("href","#where");
+      },10);
+    }
+    if($("#arrow-href").attr("href") === "#where"){
+      setTimeout(function(){
+        $("#arrow-href").removeAttr("href","#where");
+        $("#arrow-href").attr("href","#map");
+      },10);
+    }
+    if($("#arrow-href").attr("href") === "#map"){
+      setTimeout(function(){
+        $("#arrow-href").removeAttr("href","#map");
+        $("#arrow-href").attr("href","#signup");
+      },10);
+    }
+    if($("#arrow-href").attr("href") === "#signup"){
+      setTimeout(function(){
+        $("#arrow-href").removeAttr("href","#signup");
+        $("#arrow-href").attr("href","#success");
+      },10);
+    }
+    if($("#arrow-href").attr("href") === "#success"){
+      setTimeout(function(){
+        $("#arrow-href").removeAttr("href","#success");
+        $("#arrow-href").attr("href","#home");
+        $("#arrow-container").addClass("rotate");
+      },10);
+    }
+
+
+  })
+
+
+// END OF DOWN ARROW HREF SCRIPT //
 
 
 

@@ -93,6 +93,9 @@ section, div, span {
 .hide     {visibility: hidden} /*used*/
 /* .mob-show { display: none;}  /*not used yet*/
 
+.rotate {
+  transform: rotate(180deg);
+}
 
 .bg-light {background-color: #FFFFFF} /*used*/
 .bg-med   {background-color: #CDD8D3} /*used*/
@@ -203,7 +206,7 @@ header, footer {
 }
 
 .arrow img {
-    max-height: 2vw;
+    max-height: 3vw;
 }
 
 
