@@ -92,7 +92,6 @@ $('a[href*="#"]')
   // START OF HEADER HOVER ACTIONS //
 
   $("body").mousemove(function(event){
-    console.log(event.pageY)
     if(event.clientY < 55){
       $("#header").removeClass("hide");
       $("#header").removeClass("fadeOutUp");
@@ -120,7 +119,6 @@ $('a[href*="#"]')
   // START OF FOOTER HOVER ACTIONS //
 
   $("body").mousemove(function(event){
-    console.log(event.pageY)
     if(event.pageY > 4270){
       $("#footer").removeClass("hide");
       $("#footer").removeClass("fadeOutDown");
@@ -178,7 +176,6 @@ $('a[href*="#"]')
   // START OF ARROW ACTIONS ACTIONS //
 
   $("body").mousemove(function(event){
-    console.log(event.pageY)
     if(event.pageY > 616){
       $("#up-arrow").css("visibility","visible");
 
@@ -190,7 +187,7 @@ $('a[href*="#"]')
   })
 
   $("body").mousemove(function(event){
-    console.log(event.pageY)
+  //  console.log(event.pageY)
     if(event.pageY < 3703){
       $("#down-arrow").css("visibility","visible");
 
@@ -201,15 +198,8 @@ $('a[href*="#"]')
     }
   })
 
-  // $("body").mousemove(function(event){
-  //   console.log(event.pageY)
-  //   if(event.pageY < 650){
-  //     $("a[href='down']").attr('href','#what')
-  //   }
-  //
-  //     else if((event.pageY > 651) && (event.pageY < 1025)){
-  //       $("a[href='down']").attr('href','#why')
-  //     }
+// END OF ARROW ACTIONS ACTIONS //
+// START OF COUNTER SCRIPT //
 
   var a = 0;
   $(window).scroll(function() {
@@ -243,5 +233,20 @@ $('a[href*="#"]')
     }
 
   });
+
+// END OF COUNTER SCRIPT //
+// START OF FORM BUTTON OVERIDES SCRIPT //
+
+  $("#postcodebutton").click(function(event){
+    event.preventDefault();
+  setTimeout(function(){
+    window.location.href="#map";
+  },1);
+
+})
+
+// START OF FORM BUTTON OVERIDES SCRIPT //
+
+
 
   })

@@ -85,6 +85,7 @@ section, div, span {
 .margin-auto {margin: auto} /*used*/
 
 .margin-10 { margin: 10%} /*used*/
+.big-margin-top-normal-sides {margin: 25% 10% 10% 10%}
 .big-margin-left {margin-left: 10%} /*used*/
 .big-margin-right {margin-right: 10%} /*used*/
 
@@ -160,6 +161,7 @@ p {
 }
 
 /* ------------------------- HEADER AND FOOTER AND ICONS ------------------------- */
+
 
 
 header, footer {
@@ -240,6 +242,20 @@ section.map {
   margin-top: 30vh;
 }
 
+.map p, form p {
+  font-size:2.5vw;
+}
+
+.postcode {
+  margin: 0% 0% 2% 0%;
+}
+
+#home {
+  position: absolute;
+  top:-.1vh;
+}
+
+
 #what {
   position: absolute;
   top:68vh;
@@ -252,15 +268,15 @@ section.map {
 
 #where {
   position: absolute;
-  top:265vh;
+  top:275vh;
 }
 
 #signup {
   position: absolute;
-  top:505vh;
+  top:515vh;
 }
 
 #map {
   position: absolute;
-  top:300vh;
+  top:-15vh;
 }

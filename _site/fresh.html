@@ -43,20 +43,20 @@
     </h1>
   </div>
   <div class="col-4 med-height">
-    <div class="margin-10 bg-light padded-5 corners hide animated slow" id="philo1">
-      <p> Lorem ipsum dolor sit amet
+    <div class="margin-10 bg-light padded-5 corners hide animated slow textcentered" id="philo1">
+      <p> Philosophy 1
       </p>
     </div>
   </div>
   <div class="col-4 med-height">
-    <div class="margin-10 bg-light padded-5 corners hide animated slow" id="philo2">
-      <p> Lorem ipsum dolor sit amet
+    <div class="big-margin-top-normal-sides bg-light padded-5 corners hide animated slow textcentered" id="philo2">
+      <p> Philosophy 2
       </p>
     </div>
   </div>
   <div class="col-4 med-height">
-    <div class="margin-10 bg-light padded-5 corners hide animated slow" id="philo3">
-      <p> Lorem ipsum dolor sit amet
+    <div class="margin-10 bg-light padded-5 corners hide animated slow textcentered" id="philo3">
+      <p> Philospophy 3
       </p>
     </div>
   </div>
@@ -86,12 +86,19 @@
 <!-- - - - - - - - This is the start of my POSTCODE SECTION- - - - - - - - - -->
 <section class="tall">
 <span class="anchor" id="where"></span>
-<div class="bg-light textcentered padded-7">
+<div class="bg-light textcentered padded-5">
   <h2>enter your postcode</h2>
   <form action="https://formspree.io/test@gmail.com" method="POST">
-    <input type="text" name="postcode" placeholder="postcode">
+    <input type="text" name="postcode" placeholder="postcode" class="postcode">
     <!-- <input type="email" name="replyto" placeholder="Email"> -->
-    <input type="submit" name="submit" value="find" class="button">
+    <!-- <input type="submit" name="submit" value="find" class="button" id="postcodebutton"> -->
+    <div class="bg-light-transparent grid-spaceAround">
+      <a href="#map">
+        <div class="col-1 bg-med corners button">
+          <p>find</p>
+        </div>
+      </a>
+    </div>
   </form>
 </div>
 </section>
