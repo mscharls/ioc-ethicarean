@@ -10,7 +10,7 @@ header, footer {
 input.button, .button  {
   font-size: 2.5vw;
   text-align: center;
-  background-color: #BA9395;
+  background-color: #CCB9BA;
   border: none;
   font-family: 'Montserrat Alternates', sans-serif;
   padding: .7vw;
@@ -28,7 +28,7 @@ input {
 }
 
 input::placeholder {
-  color: #BA9395;
+  color: #CCB9BA;
   transition: color 1s;
   font-family: 'Raleway', sans-serif;
 }
